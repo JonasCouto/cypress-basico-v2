@@ -23,3 +23,29 @@
 //
 // -- This will overwrite an existing command --
 // Cypress.Commands.overwrite('visit', (originalFn, url, options) => { ... })
+
+
+Cypress.Commands.add('fillMandatoryFieldsAndSubmit', ()=> {
+
+    cy.get('#firstName')
+        .should('be.visible')
+        .type('Jonas')
+      
+      cy.get('#lastName')
+        .should('be.visible')
+        .type('Couto')
+      
+      cy.get('#email')
+        .should('be.visible')
+        .type('jonascouto@teste.com') 
+
+      cy.get('#open-text-area')
+        .should('be.visible')
+        //segunda parametro delay é o tempo de digitação no campo 
+        .type('teste de campo')
+
+      // CLICA NO BOTÃO DE ENVIAR O FORMULARIO
+      cy.contains('button','Enviar')
+        .click()
+      
+})
