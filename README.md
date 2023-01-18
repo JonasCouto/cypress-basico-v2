@@ -1,29 +1,28 @@
-# Testes automatizados com Cypress - Básico
+# Cypress-basico-v2 Testes end-to-end
 
-👋 Seja bem-vindo(a)!
+Sample project to demonstrate end-to-end (e2e) tests written with Cypress running on a CI service.
 
-É muito bom tê-lo(a) aqui. Tenho certeza que você vai adorar este curso. ❤️
+Pre-requirements
+To run this project, you will need:
 
-## O que você vai aprender
 
-Durante o curso de testes automatizados com Cypress (básico), você vai aprender:
+nodejs (I've used version ```8.3.2``` while writing this doc)
+NPM (I've used version ```v16.3.2``` while writing this doc)
 
-- Como configurar um projeto Cypress do zero
-- Como visitar páginas locais e remotas
-- Como lidar com os elementos mais comuns encontrados em aplicações web
-- Como testar _upload_ de arquivos
-- Como realizar as mais diversas verificações de resultados esperados
-- Como criar comandos customizados
-- Como lidar com links que abrem em outra aba do navegador
-- Como rodar testes simulando as dimensões de um dispositivo móvel
-- Como resolver os mesmos problemas de diferentes formas, conhecendo a [API do Cypress](https://docs.cypress.io/api/table-of-contents)
-- Como executar os testes em um _pipeline_ de integração contínua sempre que mudanças ocorrerem no código da aplicação (ou dos testes)
-- Como criar uma documentação mínima para seu projeto de testes automatizados
 
-## Vamos começar?
+Installation
+To install the dev dependencies, ```run npm install``` 
 
-Vá para a seção [estrutura do curso](./lessons/_course-structure_.md).
+Running the tests
+In this project, you can run tests in interactive and headless modes, and on desktop and tablet viewports.
 
-___
+Headless mode
+Run ```npm test``` (or ```npm t``` for short) to run all tests in headless mode
 
-Este é mais um curso da [**Escola Talking About Testing**](https://udemy.com/user/walmyr).
+Interactive mode
+Run ```npm run cy:open``` to open the Cypress Test Runner to run tests in interactive mode using a desktop viewport.
+
+Support this project
+If you want to support this project, leave a ⭐.
+
+Made with ❤️ by Walmyr.
