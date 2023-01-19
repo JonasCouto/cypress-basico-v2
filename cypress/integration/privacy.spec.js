@@ -26,7 +26,7 @@ describe('Central de Atendimento ao Cliente TAT', function() {
       it.only('verifica o titulos', function() {
         cy.get('#title')
         .should('be.visible')
-s       
+
       })
   
     //   // VERIFICA OS CAMPOS OBRIGATORIOS  1
